@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 const Toolbar = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -6,16 +8,16 @@ const Toolbar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a className="navbar-brand" href="#">Netflix</a>
+                    <NavLink className="navbar-brand" to="/">Netflix</NavLink>
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Movies</a>
+                            <NavLink className="nav-link" to="/movies">Movies</NavLink>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" aria-disabled="true">Serials</a>
+                            <NavLink className="nav-link" to="/serials">Serials</NavLink>
                         </li>
                     </ul>
                 </div>
