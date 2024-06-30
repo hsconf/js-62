@@ -14,7 +14,7 @@ const MoviesPage: React.FC<Props> = ({ movies }) => {
            <div className="d-flex gap-3" style={{width: "60%"}}> {
                 films.map(movie => (
                     <Movies
-                        key={movie.title}  // Используйте уникальное поле, такое как title, для ключей
+                        key={movie.title}
                         title={movie.title}
                         description={movie.description}
                         releaseDate={movie.releaseDate}
